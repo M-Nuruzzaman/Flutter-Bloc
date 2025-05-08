@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import 'package:todo_cubit/models/todo_model.dart';
+part of 'todo_list_bloc.dart';
 
 class TodoListState extends Equatable {
   final List<Todo> todos;

@@ -1,4 +1,4 @@
-import 'package:equatable/equatable.dart';
+part of 'active_todo_count_bloc.dart';
 
 class ActiveTodoCountState extends Equatable {
   final int activeTodoCount;

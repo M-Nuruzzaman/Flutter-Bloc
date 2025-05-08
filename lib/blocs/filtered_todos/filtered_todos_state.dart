@@ -1,6 +1,4 @@
-import 'package:equatable/equatable.dart';
-
-import '../../models/todo_model.dart';
+part of 'filtered_todos_bloc.dart';
 
 class FilteredTodosState extends Equatable {
   final List<Todo> filteredTodos;

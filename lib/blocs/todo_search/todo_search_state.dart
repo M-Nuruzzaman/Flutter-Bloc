@@ -1,13 +1,13 @@
-import 'package:equatable/equatable.dart';
+part of 'todo_search_bloc.dart';
 
-class SearchState extends Equatable {
+class TodoSearchState extends Equatable {
   final String searchTerm;
-  const SearchState({
+  const TodoSearchState({
     required this.searchTerm,
   });
 
-  factory SearchState.initial() {
-    return SearchState(searchTerm: '');
+  factory TodoSearchState.initial() {
+    return TodoSearchState(searchTerm: '');
   }
 
   @override
@@ -16,10 +16,10 @@ class SearchState extends Equatable {
   @override
   bool get stringify => true;
 
-  SearchState copyWith({
+  TodoSearchState copyWith({
     String? searchTerm,
   }) {
-    return SearchState(
+    return TodoSearchState(
       searchTerm: searchTerm ?? this.searchTerm,
     );
   }
